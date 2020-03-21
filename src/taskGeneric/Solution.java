@@ -7,7 +7,7 @@ package taskGeneric;
 class Solutions {}
     class ClassForGenerics {}
     interface InterfaceForGenerics<T> {}
-    class Solution<T extends ClassForGenerics>{
+    class Solution<T extends ClassForGenerics & InterfaceForGenerics>{
         private T t;
         public Solution(T t) {setT(t);}
         public T getT() {return t; }
